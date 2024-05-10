@@ -16,6 +16,9 @@
 		2782144C2BECA20000EE10E5 /* HappyBirthdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782144B2BECA20000EE10E5 /* HappyBirthdayTests.swift */; };
 		278214562BECA20000EE10E5 /* HappyBirthdayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278214552BECA20000EE10E5 /* HappyBirthdayUITests.swift */; };
 		278214582BECA20000EE10E5 /* HappyBirthdayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278214572BECA20000EE10E5 /* HappyBirthdayUITestsLaunchTests.swift */; };
+		278214692BECA3F000EE10E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278214682BECA3F000EE10E5 /* MainView.swift */; };
+		2782146B2BECA48E00EE10E5 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782146A2BECA48E00EE10E5 /* LogoView.swift */; };
+		2782146F2BECCB6E00EE10E5 /* EditBirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782146E2BECCB6E00EE10E5 /* EditBirthdayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		278214512BECA20000EE10E5 /* HappyBirthdayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyBirthdayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278214552BECA20000EE10E5 /* HappyBirthdayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayUITests.swift; sourceTree = "<group>"; };
 		278214572BECA20000EE10E5 /* HappyBirthdayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		278214682BECA3F000EE10E5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2782146A2BECA48E00EE10E5 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		2782146E2BECCB6E00EE10E5 /* EditBirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBirthdayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				278214342BECA1FE00EE10E5 /* HappyBirthdayApp.swift */,
-				278214362BECA1FE00EE10E5 /* ContentView.swift */,
-				278214382BECA1FF00EE10E5 /* Assets.xcassets */,
 				2782143D2BECA1FF00EE10E5 /* Persistence.swift */,
+				278214652BECA2DD00EE10E5 /* Model */,
+				278214662BECA2E600EE10E5 /* View */,
+				278214672BECA2EE00EE10E5 /* ViewModel */,
+				278214382BECA1FF00EE10E5 /* Assets.xcassets */,
 				278214422BECA1FF00EE10E5 /* Info.plist */,
-				2782143F2BECA1FF00EE10E5 /* HappyBirthday.xcdatamodeld */,
 				2782143A2BECA1FF00EE10E5 /* Preview Content */,
 			);
 			path = HappyBirthday;
@@ -135,6 +142,32 @@
 			path = HappyBirthdayUITests;
 			sourceTree = "<group>";
 		};
+		278214652BECA2DD00EE10E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2782143F2BECA1FF00EE10E5 /* HappyBirthday.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		278214662BECA2E600EE10E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				278214362BECA1FE00EE10E5 /* ContentView.swift */,
+				278214682BECA3F000EE10E5 /* MainView.swift */,
+				2782146A2BECA48E00EE10E5 /* LogoView.swift */,
+				2782146E2BECCB6E00EE10E5 /* EditBirthdayView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		278214672BECA2EE00EE10E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +178,7 @@
 				2782142D2BECA1FE00EE10E5 /* Sources */,
 				2782142E2BECA1FE00EE10E5 /* Frameworks */,
 				2782142F2BECA1FE00EE10E5 /* Resources */,
+				278214642BECA2B900EE10E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,14 +294,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		278214642BECA2B900EE10E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2782142D2BECA1FE00EE10E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2782143E2BECA1FF00EE10E5 /* Persistence.swift in Sources */,
+				2782146F2BECCB6E00EE10E5 /* EditBirthdayView.swift in Sources */,
+				2782146B2BECA48E00EE10E5 /* LogoView.swift in Sources */,
 				278214372BECA1FE00EE10E5 /* ContentView.swift in Sources */,
 				278214352BECA1FE00EE10E5 /* HappyBirthdayApp.swift in Sources */,
+				278214692BECA3F000EE10E5 /* MainView.swift in Sources */,
 				278214412BECA1FF00EE10E5 /* HappyBirthday.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +488,7 @@
 				DEVELOPMENT_TEAM = DCAZQ9Q5D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,6 +518,7 @@
 				DEVELOPMENT_TEAM = DCAZQ9Q5D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
