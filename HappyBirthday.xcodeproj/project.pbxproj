@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270B0BBB2BEDF1CC008EE683 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B0BBA2BEDF1CC008EE683 /* NotificationManager.swift */; };
+		277707362C047B2D00B2B84B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 277707352C047B2D00B2B84B /* .gitignore */; };
 		278214352BECA1FE00EE10E5 /* HappyBirthdayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278214342BECA1FE00EE10E5 /* HappyBirthdayApp.swift */; };
-		278214372BECA1FE00EE10E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278214362BECA1FE00EE10E5 /* ContentView.swift */; };
 		278214392BECA1FF00EE10E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278214382BECA1FF00EE10E5 /* Assets.xcassets */; };
 		2782143C2BECA1FF00EE10E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2782143B2BECA1FF00EE10E5 /* Preview Assets.xcassets */; };
 		2782143E2BECA1FF00EE10E5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782143D2BECA1FF00EE10E5 /* Persistence.swift */; };
@@ -39,9 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270B0BBA2BEDF1CC008EE683 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		277707352C047B2D00B2B84B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		277707372C047BBD00B2B84B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		278214312BECA1FE00EE10E5 /* HappyBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278214342BECA1FE00EE10E5 /* HappyBirthdayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayApp.swift; sourceTree = "<group>"; };
-		278214362BECA1FE00EE10E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		278214382BECA1FF00EE10E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2782143B2BECA1FF00EE10E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2782143D2BECA1FF00EE10E5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 		278214282BECA1FD00EE10E5 = {
 			isa = PBXGroup;
 			children = (
+				277707372C047BBD00B2B84B /* README.md */,
+				277707352C047B2D00B2B84B /* .gitignore */,
 				278214332BECA1FE00EE10E5 /* HappyBirthday */,
 				2782144A2BECA20000EE10E5 /* HappyBirthdayTests */,
 				278214542BECA20000EE10E5 /* HappyBirthdayUITests */,
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				2782143F2BECA1FF00EE10E5 /* HappyBirthday.xcdatamodeld */,
+				270B0BBA2BEDF1CC008EE683 /* NotificationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,7 +159,6 @@
 		278214662BECA2E600EE10E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				278214362BECA1FE00EE10E5 /* ContentView.swift */,
 				278214682BECA3F000EE10E5 /* MainView.swift */,
 				2782146A2BECA48E00EE10E5 /* LogoView.swift */,
 				2782146E2BECCB6E00EE10E5 /* EditBirthdayView.swift */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2782143C2BECA1FF00EE10E5 /* Preview Assets.xcassets in Resources */,
+				277707362C047B2D00B2B84B /* .gitignore in Resources */,
 				278214392BECA1FF00EE10E5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,9 +329,9 @@
 				2782143E2BECA1FF00EE10E5 /* Persistence.swift in Sources */,
 				2782146F2BECCB6E00EE10E5 /* EditBirthdayView.swift in Sources */,
 				2782146B2BECA48E00EE10E5 /* LogoView.swift in Sources */,
-				278214372BECA1FE00EE10E5 /* ContentView.swift in Sources */,
 				278214352BECA1FE00EE10E5 /* HappyBirthdayApp.swift in Sources */,
 				278214692BECA3F000EE10E5 /* MainView.swift in Sources */,
+				270B0BBB2BEDF1CC008EE683 /* NotificationManager.swift in Sources */,
 				278214412BECA1FF00EE10E5 /* HappyBirthday.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

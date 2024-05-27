@@ -10,12 +10,12 @@ import SwiftUI
 struct LogoView: View {
     var body: some View {
         VStack {
-            Image(systemName: "birthday.cake")
+            Image(systemName: "gift")
 
             Text("happy birthday")
                 .textCase(.uppercase)
         }
-        .foregroundColor(.mint)
+        .foregroundColor(.pink)
     }
 }
 

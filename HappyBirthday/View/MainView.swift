@@ -35,6 +35,9 @@ struct MainView: View {
     }
     @FocusState private var focusedField: FocusableField?
 
+    // Notifications manager
+    let notificationManager: NotificationManager = NotificationManager()
+
     // MARK: - View
     var body: some View {
         NavigationView {
@@ -227,6 +230,11 @@ struct MainView: View {
             } catch {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+
+            // Add notification
+            if alertIsActive {
+                notificationManager.addLocalNotification(birthday: newBirtday)
             }
         }
     }
